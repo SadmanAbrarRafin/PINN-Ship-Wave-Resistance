@@ -1,6 +1,6 @@
 """
 Physics-Informed Neural Network for Ship Wave Resistance Prediction
-Author: [Your Name], Bangladesh Maritime University
+Author: Sadman Abrar Rafin, Bangladesh Maritime University
 Description: Ultimate publication-ready PINN implementation for linearized Kelvin-Newman problem.
 This script includes full documentation, CUDA support, improved numerical integration, 
 Michell's integral for analytical comparison, and professional logging/reproducibility features.
