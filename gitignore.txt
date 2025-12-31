@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.o
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.venv
+venv/
+env/
+/home/ubuntu/venv/
+
+# Testing
+.pytest_cache/
+.tox/
+
+# Editor/IDE files
+.vscode/
+.idea/
+
+# PyTorch/PINN specific files
+pinn_model_final.pth
+pinn_model_checkpoint_*.pth
+training_log.txt
+*.png # Ignore generated figures
