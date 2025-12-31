@@ -1,10 +1,10 @@
 # Physics-Informed Neural Network (PINN) for Ship Wave Resistance Prediction
 
-This repository contains the final, publication-ready Python code for the research paper: **"A Physics-Informed Neural Network (PINN) Approach for Accelerated Prediction of Ship Wave Resistance."**
+This repository contains the Python code for the research paper: **"A Physics-Informed Neural Network (PINN) Approach for Accelerated Prediction of Ship Wave Resistance."**
 
 The project demonstrates a novel application of PINNs to solve the linearized potential flow problem (Kelvin-Newman problem) for the benchmark Wigley hull, achieving high accuracy with an unprecedented computational speed-up.
 
-## 🚀 Key Features
+## Key Features
 
 *   **Physics-Informed Neural Network (PINN):** Solves the Laplace equation and linearized boundary conditions by embedding them directly into the loss function.
 *   **High Accuracy & Speed:** Achieves near-CFD accuracy in wave resistance prediction while offering an inference speed-up of over 800,000x.
@@ -12,16 +12,16 @@ The project demonstrates a novel application of PINNs to solve the linearized po
 *   **Professional Codebase:** Includes full documentation, CUDA support, fixed random seeds for reproducibility, and logging.
 *   **Visualization Suite:** Automatically generates all four key figures used in the research paper.
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 To run this code, you need a system with Python 3.8+ and the following libraries. A GPU (NVIDIA) is highly recommended for accelerated training, though the code will default to CPU if CUDA is unavailable.
 
-## 📦 Installation
+## Installation
 
 1.  **Clone the repository:**
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
-    cd [YOUR_REPOSITORY_NAME]
+    git clone https://github.com/SadmanAbrarRafin/PINN-Ship-Wave-Resistance
+    cd PINN-Ship-Wave-Resistance
     ```
 
 2.  **Install dependencies:**
@@ -29,16 +29,16 @@ To run this code, you need a system with Python 3.8+ and the following libraries
     pip install -r requirements.txt
     ```
 
-## 💻 Usage
+## Usage
 
-The main script is `pinn_ship_resistance_final_corrected_v2.py`.
+The main script is `pinn_ship_resistance.py`.
 
 ### Training and Execution
 
 To train the model, compute the wave resistance, and generate all visualization figures, simply run the main script:
 
 ```bash
-python pinn_ship_resistance_final_corrected_v2.py
+python pinn_ship_resistance.py
 ```
 
 The script will perform the following steps:
@@ -64,7 +64,7 @@ The execution will generate the following files in the root directory:
 | `hull_potential_distribution.png` | Figure 3: Potential Distribution on Hull Surface. |
 | `wave_pattern_final_generated.png` | Figure 4: Free Surface Wave Pattern (Generated). |
 
-## ⚠️ Note on Validation Metrics
+## Note on Validation Metrics
 
 The research paper claims validation against high-fidelity BEM/CFD simulations. Due to the proprietary nature and size of the external validation data, the `calculate_placeholder_metrics` function in the code uses a simplified analytical solution for demonstration purposes only.
 
